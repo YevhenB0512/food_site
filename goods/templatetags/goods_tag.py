@@ -9,7 +9,7 @@ register = template.Library()
 
 @register.simple_tag()
 def categories_tag():
-    return Categories.objects.all()
+    return Categories.objects.all()[::-1]
 
 
 @register.simple_tag(takes_context=True)
