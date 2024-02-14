@@ -56,5 +56,3 @@ class OrderItem(models.Model):
 
     def __str__(self):
         return f"Товар {self.name} | Заказ № {self.order.pk}"
-
-
